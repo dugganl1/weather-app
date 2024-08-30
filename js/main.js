@@ -45,16 +45,10 @@ async function fetchWeatherData(city) {
  * @param {Object} data - The weather data object returned from the API
  */
 function displayWeatherData(data) {
-  // Extract the current conditions from the data
   const currentConditions = data.currentConditions;
-
-  // Get the current time of the location
   const localTime = new Date().toLocaleTimeString("en-US", { timeZone: data.timezone });
-
-  // Extract just the city name from the resolved address
   const cityName = data.address.split(",")[0].trim();
 
-  // Update the weatherInfo div with the weather data
   weatherInfo.innerHTML = `
         <h2>${cityName}</h2>
         <p>Current Time: ${localTime}</p>
