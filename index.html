@@ -7,8 +7,27 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    />
   </head>
   <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <select id="citySelect">
+        <option value="Dublin">Dublin</option>
+        <option value="London">London</option>
+        <option value="New York">New York</option>
+        <option value="Paris">Paris</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Berlin">Berlin</option>
+        <option value="San Francisco">San Francisco</option>
+      </select>
+      <div id="weatherInfo">
+        <p>Select a city to see weather information.</p>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
